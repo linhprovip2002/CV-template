@@ -1,0 +1,244 @@
+
+
+.contact-page{
+    position: relative;
+    width: 100%;
+    transition: 0.3s;
+}
+.contact-page .container{
+    margin-bottom: -41px;
+}
+.contact-page .title{
+    padding-top: 120px !important;
+    letter-spacing: 2px;
+    box-sizing: border-box;
+}
+.contact-page .title h2{
+    font-size: 2.5rem;
+    font-weight: 900;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+.contact-page .title span{
+    font-size: 4.5rem;
+    margin-top: 0px;
+    padding-top: 0px;
+    position: relative;
+    top: -30px;
+    color: #141722;
+    font-weight: 900;
+}
+.contact-page .title .progress{
+    width: 100px;
+    height: 5px !important;
+    background-color: #0c3360 !important;
+    position: absolute;
+    top: 50%; left: 0;
+}
+
+/* #343A40: mau cua bg-dark trong Bootstrap */
+.contact-page .contact .input-box{
+    position: relative;
+    border: 1px solid #343a40; 
+    height: 50px;
+    font-size: 1rem;
+    padding: 0 15px;
+    display: flex;
+    align-items: center;
+    margin: 34px 0;
+    font-size: 1rem;
+}
+.contact-page .contact .input-box label{
+    position: absolute;
+    z-index: 10;
+    display: inline-block;
+    background-color: #10121b;
+    padding: 0 8px;
+    top: -12px;
+    left: 15px;
+}
+.contact-page .contact .input-box input{
+    background: none;
+    border: none;
+    outline: none;
+    width: 100%;
+    height: 100%;
+}
+.contact-page .contact .message{
+    height: 200px;
+    display: flex;
+    padding: 10px 15px;
+    align-items: flex-start;
+}
+.contact-page .contact .message textarea{
+    background: none;
+    width: 100%;
+    height: 100%;
+    outline: none;
+    border: none;
+}
+.contact-page .contact button{
+    margin: 0;
+    width: 156px;
+    letter-spacing: 0.1rem;
+    height: 50px;
+    color: white;
+    background-color:#197fff;
+    border: 0;
+    position: relative;
+    outline: none;
+}
+.contact-page .contact button::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 2.5px;
+    width: 0%;
+    background-color: white;
+    transition: 0.3s;
+}
+.contact-page .contact button:hover::before{
+    width: 100%;
+}
+.contact-page .contact .invalid-model{
+    width: 100%;
+    height: 55px;
+    margin: 35px 0;
+    padding: 0 15px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+}
+
+
+.contact-page .contact .info-block{
+    background-color: #191d2b;
+    width: 100%;
+    height: 150px;
+    display: flex;
+    padding-left: 30px;
+    align-items: center;
+    margin: 25px 0;
+}
+.contact-page .contact .info-block .fa{
+    width: 70px;
+    height: 70px;
+    border: 1px solid #343a40;
+    margin-right: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+}
+.contact-page .contact .info-block h6{
+    font-size: 1.15rem;
+}
+
+
+
+@media screen and (max-width: 992px){
+    .contact-page .title{
+        padding-top: 90px !important;
+    }
+    .contact-page .title h2{
+        font-size: 2.3rem;
+    }
+    .contact-page .title span{
+        font-size: 4rem;
+    }
+}
+@media screen and (max-width: 767px){
+    
+}
+
+@media screen and (max-width: 576px){
+    .contact-page p{
+        font-size: 1.1rem;
+    }
+    .contact-page .contact .info-block{
+        background-color: #191d2b;
+        width: 100%;
+        height: 150px;
+        padding-left: 25px;
+    }
+    .contact-page .contact .info-block .fa{
+        width: 60px;
+        height: 60px;
+        border: 1px solid #343a40;
+        margin-right: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.3rem;
+    }
+    .contact-page .contact .info-block h6{
+        font-size: 1.15rem;
+    }
+    
+}
+@media screen and (max-width: 425px){
+    .contact-page .title h2{
+        font-size: 2.2rem;
+    }
+    .contact-page .title span{
+        font-size: 2.6rem;
+        top: -20px;
+    }
+    .contact-page .get-in-touch h3{
+        font-size: 1.4rem;
+    }
+    .contact-page .contact .info-block{
+        background-color: #191d2b;
+        width: 100%;
+        height: 150px;
+        padding-left: 25px;
+        font-size: 1rem;
+        padding-left: 10px;
+    }
+    .contact-page .contact .info-block .fa{
+        width: 40px;
+        height: 40px;
+        border: 1px solid #343a40;
+        margin-right: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.2rem;
+    }
+    .contact-page .contact .info-block h6{
+        font-size: 1.1rem;
+    }
+    .contact-page .contact .info-block a{
+        font-size: 0.85rem;
+    }
+}
+@media screen and (max-width: 370px){
+    .contact-page .contact .info-block{
+        padding-left: 10px;
+    }
+    .contact-page .contact .info-block .fa{
+        width: 35px;
+        height: 35px;
+    }
+    .contact-page .contact .info-block a{
+        font-size: 0.7rem;
+    }
+}
+@media screen and (max-width: 300px){
+    .contact-page .content p{
+        margin: 15px 0;
+    } 
+    .contact-page .title{
+        padding-top: 70px !important;
+        padding-bottom: 20px;
+    }
+    .contact-page .title h2{
+        font-size: 1.8rem;
+    }
+    .contact-page .title span{
+        font-size: 2rem;
+        top: -15px;
+    }
+    
+}

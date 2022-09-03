@@ -1,0 +1,184 @@
+
+
+
+.portfolio{
+    position: relative;
+    width: 100%;
+    transition: 0.3s;
+}
+.portfolio .container{
+    margin-bottom: -41px;
+}
+.portfolio .title{
+    padding-top: 120px !important;
+    letter-spacing: 2px;
+    box-sizing: border-box;
+}
+.portfolio .title h2{
+    font-size: 2.5rem;
+    font-weight: 900;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+.portfolio .title span{
+    font-size: 4.5rem;
+    margin-top: 0px;
+    padding-top: 0px;
+    position: relative;
+    top: -30px;
+    color: #141722;
+    font-weight: 900;
+}
+.portfolio .progress{
+    width: 100px;
+    height: 5px !important;
+    background-color: #0c3360 !important;
+    position: absolute;
+    top: 50%; left: 0;
+}
+
+/* Each photo-box */
+.portfolio .photo-box{
+    position: relative;
+}
+.portfolio .photo-box::before{
+    content:'';
+    position: absolute;
+    width: 0px;
+    height: 86%;
+    top: 7%;
+    left: 5%;
+    background-color: white;
+    opacity: 0.8;
+    transition: 0.5s;
+}
+.portfolio .photo-box:hover::before{
+    width: 90%;
+}
+.portfolio .photo-box .fa{
+    width: 45px;
+    height: 45px;
+    background-color: #AFB6Cb;
+    color: white;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+.portfolio .photo-box .fa-search-plus{
+    position: absolute;
+    bottom: 25%;
+    left: 35%;
+    opacity: 0;
+    transition: 0.6s;
+    transition-delay: 0.1s;
+}
+.portfolio .photo-box .fa-link{
+    position: absolute;
+    bottom: 25%;
+    right: 35%;
+    opacity: 0;
+    transition: 0.6s;
+    transition-delay: 0.1s;
+}
+.portfolio .photo-box:hover .fa-search-plus, .photo-box:hover .fa-link{
+    opacity: 1;
+    bottom: 43%;
+}
+.portfolio .photo-box .fa:hover{
+    background-color: #0f7bff;
+}
+
+
+.portfolio .product{
+    margin: 15px 0 30px;
+}
+.portfolio .product .name{
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+.portfolio .product .discription{
+    font-size: 1.2rem;
+}
+
+.container .pagination{
+    padding-bottom: 120px;
+}
+.pagination .page-link{
+    font-size: 1.2rem;
+}
+.pagination .page-link:hover{
+    background-color: #ddd !important;
+    transition: 0.2s;
+}
+
+/* Model photo */
+.portfolio .modal-header{
+    border: 0;
+    margin: 0;
+}
+
+.portfolio .modal-content{
+    background-color: #343A40;
+    position: relative;
+    left: 0;
+    padding: 0;
+}
+button{
+    outline: none !important;
+}
+
+@media screen and (max-width: 992px){
+    .portfolio .title{
+        padding-top: 90px !important;
+    }
+    .portfolio .title h2{
+        font-size: 2.3rem;
+    }
+    .portfolio .title span{
+        font-size: 4rem;
+    }
+}
+@media screen and (max-width: 767px){
+    
+}
+
+@media screen and (max-width: 576px){
+    .portfolio p{
+        font-size: 1.1rem;
+    }
+}
+@media screen and (max-width: 425px){
+    .portfolio .title h2{
+        font-size: 2.2rem;
+    }
+    .portfolio .title span{
+        font-size: 2.6rem;
+        top: -22px;
+    }
+    .portfolio .product .name{
+        font-size: 1.3rem;
+        font-weight: 700;
+    }
+    .portfolio .product .discription{
+        font-size: 1.1rem;
+    }
+}
+@media screen and (max-width: 300px){
+    .portfolio .content p{
+        margin: 15px 0;
+    } 
+    .portfolio .title{
+        padding-top: 70px !important;
+        padding-bottom: 20px;
+    }
+    .portfolio .title h2{
+        font-size: 1.8rem;
+    }
+    .portfolio .title span{
+        font-size: 2rem;
+        top: -15px;
+    }
+}

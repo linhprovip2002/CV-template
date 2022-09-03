@@ -1,0 +1,128 @@
+
+
+.blog{
+    width: 100%;
+    transition: 0.3s;
+}
+
+.blog .title{
+    padding-top: 120px !important;
+    letter-spacing: 2px;
+    box-sizing: border-box;
+}
+.blog .title h2{
+    font-size: 2.5rem;
+    font-weight: 900;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+.blog .title span{
+    font-size: 4.5rem;
+    margin-top: 0px;
+    padding-top: 0px;
+    position: relative;
+    top: -30px;
+    color: #141722;
+    font-weight: 900;
+}
+.blog .progress{
+    width: 100px;
+    height: 5px !important;
+    background-color: #0c3360 !important;
+    position: absolute;
+    top: 50%; left: 0;
+}
+
+.blog .card{
+    margin: auto;
+    background-color: #191d2b !important;
+    cursor: pointer;
+}
+.blog .card .img{
+    overflow: hidden;
+    transition: 0.3s;
+}
+.blog .card img{
+    transition: 0.3s;
+}
+.blog .card:hover img{
+    transform: scale(1.15);
+    object-fit: cover !important;
+    transition: 0.3s;
+}
+.blog .card .date{
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    top: 35px;
+    left: 35px;
+    font-size: 1.3rem;
+}
+.blog .card .date b{
+    font-size: 2.3rem;
+    line-height: 30%;
+}
+
+.blog .page-link{
+    font-size: 1.2rem;
+}
+.blog .page-link:hover{
+    background-color: #ddd !important;
+    transition: 0.2s;
+}
+
+@media screen and (max-width: 992px){
+    .blog .title{
+        padding-top: 90px !important;
+    }
+    .blog .title h2{
+        font-size: 2.3rem;
+    }
+    .blog .title span{
+        font-size: 4rem;
+    }
+}
+@media screen and (max-width: 767px){
+    
+}
+
+@media screen and (max-width: 576px){
+    .blog p{
+        font-size: 1.1rem;
+    }
+}
+@media screen and (max-width: 425px){
+    .blog .title h2{
+        font-size: 2.2rem;
+    }
+    .blog .title span{
+        font-size: 2.2rem;
+        top: -20px;
+    }
+    .blog .card .date{
+        width: 50px;
+        height: 50px;
+        font-size: 0.5rem;
+    }
+    .blog .card .date b{
+        font-size: 0.9rem;
+        line-height: 10%;
+    }
+}
+@media screen and (max-width: 300px){
+    .blog .content p{
+        margin: 15px 0;
+    } 
+    .blog .title{
+        padding-top: 70px !important;
+        padding-bottom: 20px;
+    }
+    .blog .title h2{
+        font-size: 1.8rem;
+    }
+    .blog .title span{
+        font-size: 2rem;
+        top: -15px;
+    }
+    
+}

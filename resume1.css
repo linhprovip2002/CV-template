@@ -1,0 +1,215 @@
+
+
+.resume-page{
+    position: relative;
+    width: 100%;
+    transition: 0.3s;
+}
+.resume-page .container{
+    margin-bottom: -41px;
+}
+.resume-page .title{
+    padding-top: 120px !important;
+    letter-spacing: 2px;
+    box-sizing: border-box;
+}
+.resume-page .title h2{
+    font-size: 2.5rem;
+    font-weight: 900;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+.resume-page .title span{
+    font-size: 4.5rem;
+    margin-top: 0px;
+    padding-top: 0px;
+    position: relative;
+    top: -30px;
+    color: #141722;
+    font-weight: 900;
+}
+.resume-page .title .progress{
+    width: 100px;
+    height: 5px !important;
+    background-color: #0c3360 !important;
+    position: absolute;
+    top: 50%; left: 0;
+}
+
+/* Skills level */
+.resume-page .skill{
+    margin: 25px 0;
+}
+.resume-page .skill .field{
+    font-size: 1.3rem;
+}
+.resume-page .skill .content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1.1rem;
+}
+
+.resume-page .skill .progress{
+    width: 100px;
+    height: 6.5px !important;
+    border-radius: 0 !important;
+    background-color: #2e344e !important;
+}
+
+/* Resume */
+.resume-page .resume-title{
+    height: 10vh;
+    display: flex;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+.resume-page .resume-title .fa{
+    margin: 0 20px 0 0;
+    font-size: 1.7rem;
+    color: white;
+}
+.resume-page .resume-title h3{
+    color: white;
+    font-size: 1.7rem;
+    font-weight: 700;
+}
+.resume-page .timeline{
+    border-left: 3px solid #2e344e;
+    font-size: 1.14rem;
+    margin: 0 auto;
+}
+.resume-page .timeline-box{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.resume-page .timeline-box::before{
+    content: '';
+    position: absolute;
+    top: 5px;
+    left: -24px;
+    width: 15px;
+    height: 15px;
+    border-radius: 100%;
+    background-color: #10121b;
+    border: 3px solid #2e344e;
+}
+.resume-page .timeline-box .time-marked{
+    width: 25%;
+}
+.resume-page .timeline-box .job-discription{
+    position: relative;
+    width: 76%;
+}
+.resume-page .timeline-box .job-discription::before{
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 3px;
+    background-color: #2e344e;
+    top: 10px;
+    left: -55px;
+    border-radius: 1px;
+}
+.resume-page .timeline-box .job-discription h5{
+    font-size: 1.43rem;
+    color: #0f7bff;
+    font-weight: 600;
+}
+.resume-page .timeline-box .job-discription a{
+    color: white;
+}
+
+@media screen and (min-width: 1500px){
+    
+}
+
+@media screen and (max-width: 992px){
+    .resume-page .title{
+        padding-top: 90px !important;
+    }
+    .resume-page .title h2{
+        font-size: 2.3rem;
+    }
+    .resume-page .title span{
+        font-size: 4rem;
+    }
+}
+@media screen and (max-width: 767px){
+    .resume-page .timeline-box{
+        display: block;
+        margin: 20px auto;
+        font-size: 1.1rem;
+    }
+    .resume-page .timeline-box .job-discription::before{
+        width: 100px;
+        top: -10px;
+        left: 0;
+    }
+    .resume-page .timeline-box .job-discription{
+        width: 100%;
+    }
+    .resume-page .timeline-box .job-discription h5{
+        margin-top: 25px;
+    }
+}
+
+@media screen and (max-width: 576px){
+    .resume-page p{
+        font-size: 1.1rem;
+    }
+    .resume-page .skill .field{
+        font-size: 1.2rem;
+    }
+    .resume-page .skill .content{
+        display: block;
+    }
+    .resume-page .skill .content .progress{
+        width: 100% !important;
+    }
+    .resume-page .timeline{
+        margin:0 20px;
+        box-sizing: border-box;
+        width: 95%;
+    }
+    .resume-page .timeline-box .time-marked{
+        width: 50%;
+    }
+}
+@media screen and (max-width: 425px){
+    .resume-page .title h2{
+        font-size: 2.2rem;
+    }
+    .resume-page .title span{
+        font-size: 2.6rem;
+        top: -22px;
+    }
+    .resume-page .resume-title h3{
+        font-size: 1.5rem;
+    }
+    .resume-page .timeline-box .job-discription h5{
+        font-size: 1.3rem;
+        width: 85%;
+    }
+    .resume-page .timeline-box .job-discription{
+        font-size: 1.1rem;
+    }
+}
+@media screen and (max-width: 300px){
+    .resume-page .content p{
+        margin: 15px 0;
+    } 
+    .resume-page .title{
+        padding-top: 70px !important;
+        padding-bottom: 20px;
+    }
+    .resume-page .title h2{
+        font-size: 1.8rem;
+    }
+    .resume-page .title span{
+        font-size: 2rem;
+        top: -15px;
+    }
+}
