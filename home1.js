@@ -3,7 +3,15 @@ let headerBox = document.getElementById("header-box");
 let count = 0;
 let x = window.matchMedia("(max-width: 1200px)");
 
-
+document.getElementById('downloadButton').addEventListener('click', function() {
+    const url = './public/CV NHAT LINH DANG QUANG - CV-BE-midlv-TopCV.vn.pdf';
+    const link = document.createElement('a');
+    link.href = url;
+    link.setAttribute('download', 'file.pdf');
+    document.body.appendChild(link);
+    link.click();
+    link.parentNode.removeChild(link);
+   });
 
 // Resize screen 
 function reszieScreen(x){
